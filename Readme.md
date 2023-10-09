@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Арина Кузнецова](https://up.htmlacademy.ru/htmlcss-individual/1/user/2328159).
-* Наставник: `Анна Лисененкова`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena/).
 
 ---
 
