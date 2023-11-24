@@ -46,10 +46,79 @@
 </ul>
 </nav>
 </header>
-<main>
-
+<main class="inner">
+<header class="inner-header">
+  <h1 class="inner-header-title">Гостиницы Седоны</h1>
+  <ul class="breadcrumbs">
+  <li class="breadcrumbs-item">
+<a class="breadcrumbs-link" href="index.html">Главная</a>
+</li>
+<li class="breadcrumbs-item">
+  <a class="breadcrumbs-link">Гостиницы Седоны</a>
+  </li>
+</ul>
+</header>
+<section class="catalog-hotels-search">
+  <h2 class="visually-hidden">Поиск гостиниц с фильтрами</h2>
+  <form class="catalog-filter"action="http://echo.htmlacadamy.ru/" method="get">
+    <fieldset class="catalog-filter-group">
+      <legend class="catalog-filter-title">Инфраструктура</legend>
+      <ul class="catalog-filter-list">
+<li class="catalog-filter-item">
+  <label class="control">
+    <input class="control-input" type="checkbox" name="Бассейн" checked>
+    Бассейн
+  </label>
+ </li>
+ <li class="catalog-filter-item">
+  <label class="control">
+    <input class="control-input" type="checkbox" name="Парковка" checked>
+    Парковка
+  </label>
+ </li>
+ <li class="catalog-filter-item">
+  <label class="control">
+    <input class="control-input" type="checkbox" name="Wi-fi">
+    Wi-fi
+  </label>
+ </li>
+  </ul>
+    </fieldset>
+    <fieldset class="catalog-filter-group">
+      <legend class="catalog-filter-title">Тип жилья</legend>
+      <ul class="catalog-filter-list">
+        <li class="catalog-filter-item">
+   <label class="control">
+<input class="control-input" type="radio" name="product-group" value="hotel"checked>
+Гостиница
+   </label>
+   </li>
+   <li class="catalog-filter-item">
+    <label class="control">
+ <input class="control-input" type="radio" name="product-group" value="motel">
+ Мотель
+    </label>
+    </li>
+    <li class="catalog-filter-item">
+      <label class="control">
+   <input class="control-input" type="radio" name="product-group" value="apartments">
+   Апартаменты
+      </label>
+      </li>
+  </ul>
+  </fieldset>
+  <Section class="appointment">
+    <form class="appointment-form" action="http://echo.htmlacademy.ru/" method="post">
+      <label for="cost-field">стоимость,р:</label>
+      <input type="text" name="cost"value="0  от">
+      <input type="text" name="cost"value="9000 до">
+  </form>
+</Section>
+  <button class="button" type="submit">Применить</button>
+  <button class="button" type="submit">Сбросить</button>
+  </form>
+</section>
 </main>
-
 <footer class="page-footer">
 <section class="footer-social">
 <h2 class="visually-hidden page-footer-title"> Мы в социальных сетях</h2>
