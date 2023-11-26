@@ -58,9 +58,9 @@
   </li>
 </ul>
 </header>
-<section class="catalog-hotels-search">
+<section class="catalog-products">
   <h2 class="visually-hidden">Поиск гостиниц с фильтрами</h2>
-  <form class="catalog-filter"action="http://echo.htmlacadamy.ru/" method="get">
+  <form class="catalog-filter" action="http://echo.htmlacadamy.ru/" method="get">
     <fieldset class="catalog-filter-group">
       <legend class="catalog-filter-title">Инфраструктура</legend>
       <ul class="catalog-filter-list">
@@ -89,7 +89,7 @@
       <ul class="catalog-filter-list">
         <li class="catalog-filter-item">
    <label class="control">
-<input class="control-input" type="radio" name="product-group" value="hotel"checked>
+<input class="control-input" type="radio" name="product-group" value="hotel" checked>
 Гостиница
    </label>
    </li>
@@ -107,20 +107,19 @@
       </li>
   </ul>
   </fieldset>
-  <Section class="appointment">
-    <form class="appointment-form" action="http://echo.htmlacademy.ru/" method="post">
-      <label for="cost-field">стоимость,р:</label>
-      <input type="text" name="cost"value="0  от">
-      <input type="text" name="cost"value="9000 до">
-  </form>
-</Section>
-  <button class="button" type="submit">Применить</button>
-  <button class="button" type="submit">Сбросить</button>
   </form>
 </section>
-<section class="select-hotel">
-<strong>Найдено гостиниц: 38</strong>
-<select class="select-control"aria-lable="Сортировка">
+  <section class="appointment">
+    <h2 class="visually-hidden appointment-title">Стоимость,р.</h2>
+<form class="appointment-form" action="https://echo.htmlacadamy.ru/" method="post"></form>
+<label> Стоимость, р.</label>
+<input type="text" name="cost" value="0 от">
+<input type="text" name="cost" value="9000 до">
+<button class="button" type="submit">Применить</button>
+<button class="button" type="submit">Сбросить</button>
+  </section>
+    <strong>Найдено гостиниц: 38</strong>
+  <select class="select-control" name="Сортировка">
   <option value="cheep"> Сначала дешевые</option>
 </select>
 <a href="#" class="button button-light">
@@ -129,67 +128,62 @@
 <a class="button button button-light" href="#">
   <span class=" visually-hidden"> Показать список</span>
 </a>
-</section>
-<section class="product-hotel-card">
-  <ul class="product-hotel-card-list">
-    <li class="product-hotel-card-item">
-<a class="product-hotel-card-link" href="product-hotel.html">
-  <img class="product-hotel-card-image"src="#"alt="">
+<section class="product-card">
+  <ul class="product-card-list">
+    <li class="product-card-item">
+<a class="product-card-link" href="product-hotel.html">
+  <img class="product-hotel-card-image" src="#" alt="">
   <h3 class="product-hotel-card-title">Amara Resort & Spa</h3>
 </a>
 <span>Гостиница</span>
-<span class="product-hotel-card-price">От 4000р</span>
-<a class="product-hotel-card-button button" href="#">Подробнее</a>
-<a class="product-hotel-card-button button" href="#">В избранное</a>
-<form class="rating-area">
-<input type="rating" name="rating-star" value="****">
-<label for="star-4" title="Оценка «4»"></label>
-<input type="text" name="rating-star" value="Рейтинг: 8,5">
+<span class="product-card-price">От 4000р</span>
+<a class="product-card-button button" href="#">Подробнее</a>
+<a class="product-card-button button" href="#">В избранное</a>
+<form class=" appointment-raiting">
+<input type="text" name="rating-star" value="****">
+<input type="text" name="raiting" value="Рейтинг: 8,5">
 </form>
     </li>
-  <li class="product-hotel-card-item">
-  <a class="product-hotel-card-link" href="product-hotel.html">
-  <img class="product-hotel-card-image"src="#"alt="">
-  <h3 class="product-hotel-card-title">Villas at Poco Diablo</h3>
+  <li class="product-card-item">
+  <a class="product-card-link" href="product-hotel.html">
+  <img class="product-card-image" src="#" alt="">
+  <h3 class="product-card-title">Villas at Poco Diablo</h3>
     </a>
   <span>Гостиница</span>
-  <span class="product-hotel-card-price">От 5000 ₽</span>
-  <a class="product-hotel-card-button button" href="#">Подробнее</a>
-  <a class="product-hotel-card-button button" href="#">В избранное</a>
-  <form class="rating-area">
-  <input type="rating" name="rating-star" value="****">
-  <label for="star-4" title="Оценка «4»"></label>
-  <input type="text" name="rating-star" value="Рейтинг: 9,2">
+  <span class="product-card-price">От 5000 ₽</span>
+  <a class="product-card-button button" href="#">Подробнее</a>
+  <a class="product-card-button button" href="#">В избранное</a>
+  <form class="appointment-raiting">
+  <input type="text" name="raiting-star" value="****">
+<input type="text" name="raiting-star" value="Рейтинг: 9,2">
   </form>
   </li>
-  <li class="product-hotel-card-item">
-  <a class="product-hotel-card-link" href="product-hotel.html">
-  <img class="product-hotel-card-image"src="#"alt="">
-  <h3 class="product-hotel-card-title">Desert Quail Inn</h3>
+  <li class="product-card-item">
+  <a class="product-card-link" href="product-hotel.html">
+  <img class="product-card-image" src="#" alt="">
+  <h3 class="product-card-title">Desert Quail Inn</h3>
   </a>
   <span>Гостиница</span>
-  <span class="product-hotel-card-price">От 2500 ₽</span>
-  <a class="product-hotel-card-button button" href="#">Подробнее</a>
-  <a class="product-hotel-card-button button" href="#">В избранное</a>
- <form class="rating-area">
-<input type="rating" name="rating-star" value="***">
- <label for="star-3" title="Оценка «3»"></label>
- <input type="text" name="rating-star" value="Рейтинг: 6,9">
+  <span class="product-card-price">От 2500 ₽</span>
+  <a class="product-card-button button" href="#">Подробнее</a>
+  <a class="product-card-button button" href="#">В избранное</a>
+ <form class="appointment-raiting">
+<input type="text" name="raiting-star" value="***">
+  <input type="text" name="raiting-star" value="Рейтинг: 6,9">
  </form>
   </li>
 <li class="product-hotel-card-item">
 <a class="product-hotel-card-link" href="product-hotel.html">
-<img class="product-hotel-card-image"src="#"alt="">
+<img class="product-hotel-card-image" src="#" alt="">
 <h3 class="product-hotel-card-title">GreenTree Inn</h3>
 </a>
 <span>Гостиница</span>
 <span class="product-hotel-card-price">От 1500 ₽</span>
 <a class="product-hotel-card-button button" href="#">Подробнее</a>
 <a class="product-hotel-card-button button" href="#">В избранное</a>
-<form class="rating-area">
-<input type="rating" name="rating-star" value="**">
-<label for="star-2" title="Оценка «2»"></label>
-<input type="text" name="rating-star" value="Рейтинг: 5,0">
+<form class="appointment-raiting">
+<input type="text" name="raiting-star" value="**">
+<input type="text" name="raiting-star" value="Рейтинг: 5,0">
 </form>
 </li>
     </ul>
@@ -236,19 +230,18 @@
   </li>
     </ul>
 </section>
-<section class="appointment-form">
+<section class="appointment">
   <h2 class="appointment-form-title">Подпишитесь на рассылку</h2>
   <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
   <form class="appointment-form" action="http://echo.htmlacademy.ru/" method="post"></form>
-  <label for="login-field">Ваш e-mail</label>
-  <input type="text" id="e-mail" name="e-mail" value="Ваш e-mail">
+  <input type="text" name="e-mail" value="Ваш e-mail">
   <input type="submit" value="Подписаться">
   <img src="#" alt="Фоновое изображение">
   </section>
 </main>
-<footer class="page-footer">
+<footer class="main-footer">
 <section class="footer-social">
-<h2 class="visually-hidden page-footer-title"> Мы в социальных сетях</h2>
+<h2 class="visually-hidden main-footer-title"> Мы в социальных сетях</h2>
 <ul class="footer-social-list">
 <li class="footer-social-item">
 <a class="button" href="#">
@@ -274,7 +267,6 @@
 <a class="page-footer-logo" href="#">
 <img src="#" alt="Логотип-ссылка на HTML acadamy">
 </a>
-</footer>
 </footer>
 </body>
 </html>
