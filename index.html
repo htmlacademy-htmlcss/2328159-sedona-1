@@ -103,35 +103,19 @@
       </ul>
     </section>
     <section class="appointment-form">
-      <h2 class="appointment-title">Заинтересовались?</h2>
+      <h2 class="title">Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <button class="button" type="submit">поиск гостиницы в Седоне</button>
-      <form class="appointment-form" action="http://echo.htmlacademy.ru/" method="post">
-        <label></label><b>Дата Заезда</b>
-        <input type="text" name="date" id="appointment-date" value="27 апреля 2020"><br>
-        </label>
-        <span>Мы не можем отправить вас в прошлое.</span><br>
-        <label><b>Дата Выезда</b>
-          <input type="text" name="date" id="appointment-date" value="1 сентября 2023"><br>
-        </label>
-        <span>На эти даты есть свободные номера. Пока есть.</span><br>
-        <label></label><b>Взрослые</b></label>
-        <input type="text" name="number" id="appointment-number" value="+ 2  -">
-        <label><b>Дети</b></label>
-        <input type="text" name="number" id="appointment-number" value="+ 2  -"><br>
-        <button class="button" type="submit">Найти</button>
-        <input type="text" name="appeal"
-          value="Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.">
-      </form>
+      <button class="button" type="button">поиск гостиницы в Седоне</button>
     </section>
     <section class="appointment-e-mail">
-      <h2 class="appointment-form-title">Подпишитесь на рассылку</h2>
+      <h2 class="title">Подпишитесь на рассылку</h2>
       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <form class="appointment-form" action="http://echo.htmlacademy.ru/" method="post">
-        <label for="e-mail"></label>
-        <input type="text" name="e-mail" value="Ваш e-mail">
-        <input type="submit" value="Подписаться">
-        <img src="#" alt="Фоновое изображение">
+      <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label for="e-mail">
+          <span class="visually-hidden">Введите Ваш e-mail</span>
+        </label>
+        <input id="e-mail" name="e-mail" value="Ваш e-mail">
+        <button type="submit"> Подписаться</button>
       </form>
     </section>
   </main>
