@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
 </head>
-
 <body>
   <header class="main-header">
     <a class="main-header-logo" href="index.html" aria-current="page">
@@ -17,7 +15,7 @@
           <a class="main-navigation-link" href="index.html">Главная</a>
         </li>
         <li class="main-navigation-item">
-          <a class="main-navigation-link" href="#">О седоне</a>
+          <a class="main-navigation-link" href="#">О Седоне</a>
         </li>
         <li class="main-navigation-item">
           <a class="main-navigation-link" href="catalog.html">Гостиницы</a>
@@ -123,7 +121,7 @@
       <h2 class="visually-hidden page-footer-title"> Мы в социальных сетях</h2>
       <ul class="social-list">
         <li class="footer-social-item">
-          <a class="button" href=" https://vk.com/htmlacademy"
+          <a class="button" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Vkonakte</span>
           </a>
         </li>
@@ -148,10 +146,29 @@
     </a>
   </footer>
   <div class="modal">
-   <form class="appointment-form" action="https://echo.htmlacademy.ru/"method="post">
-    <lable for="appointment-date">Дата заезда</lable>
-
-   </form>
+   <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+    <label>Дата Заезда</label>
+      <input type="text" name="appointment-date" id="arrival-date" value="27 апреля 2020">
+    <p>Мы не можем отправить Вас в прошлое</p>
+    <label>Дата Выезда</label>
+      <input type="text" name=" appointment-date" id="daparture-date" value="1 сентября 2023">
+      <p>На эти дни есть свободные номера. Пока есть</p>
+    <label> Взрослые</label>
+    <div>
+      <button type="button">-</button>
+      <input type="text" name="guests" id="adult" value="2">
+      <button type="button">+</button>
+    </div>
+    <label>Дети</label>
+    <div>
+      <button type="button">-</button>
+      <input type="text" name="appointment-guests" id="children" value="2">
+      <button type="button">+</button>
+      <button class="button">i</button>
+      <p>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+      <button class="button" type="submit">Найти</button>
+    </div>
+    </form>
   </div>
 </body>
 
