@@ -67,15 +67,15 @@
              <li class="catalog-filter-item">
               <label class="control">
               <input class="control-input" type="checkbox" name="Бассейн" checked>
+              Бассейн
               </label>
-            Бассейн
-             </li>
+            </li>
              <li class="catalog-filter-item">
               <label class="control">
               <input class="control-input" type="checkbox" name="Парковка" checked>
+              Парковка
               </label>
-            Парковка
-             </li>
+              </li>
              <li class="catalog-filter-item">
               <label class="control">
                 <input class="control-input" type="checkbox" name="Wi-fi">
@@ -118,6 +118,8 @@
       <h2 class="title">Найдено гостиниц: 38</h2>
       <select>
         <option value="cheep"> Сначала дешевые</option>
+        <option value="middle">Средней ценновой группы</option>
+        <option value="rich">Дорогие</option>
       </select>
       <ul class="button-button-light-list">
         <li class="button-button-light-item">
@@ -141,7 +143,6 @@
           <h3 class="title">Amara Resort & Spa</h3>
         <img class="product-card-image" src="#" alt=" Изображение гостиницы Amara Resort & Spa">
          <p>Гостиница от 4000р</p>
-         <a class="product-card-link" href="#"></a>
          <a class="product-card-button" href="#"> Подробнее</a>
          <a class="product-card-button" href="#"> В избранное</a>
          <p class=" stars stars-4">
@@ -155,7 +156,6 @@
           <h3 class="title">Villas at Poco Diablo</h3>
         <img class="product-card-image" src="#" alt=" Изображение гостиницы Villas at Poco Diablo">
          <p>Гостиница от 5000р</p>
-         <a class="product-card-link" href="#"></a>
          <a class="product-card-button" href="#"> Подробнее</a>
          <a class="product-card-button" href="#"> В избранное</a>
          <p class=" stars stars-4">
@@ -169,7 +169,6 @@
           <h3 class="title"> Desert Quail Inn</h3>
         <img class="product-card-image" src="#" alt=" Изображение гостиницы Villas at Poco Diablo">
          <p>Гостиница от 2500р</p>
-         <a class="product-card-link" href="#"></a>
          <a class="product-card-button" href="#"> Подробнее</a>
          <a class="product-card-button" href="#"> В избранное</a>
          <p class=" stars stars-3">
@@ -183,7 +182,6 @@
           <h3 class="title"> GreenTree Inn </h3>
         <img class="product-card-image" src="#" alt=" Изображение гостиницы Villas at Poco Diablo">
          <p>Гостиница от 1500р</p>
-         <a class="product-card-link" href="#"></a>
          <a class="product-card-button" href="#"> Подробнее</a>
          <a class="product-card-button" href="#"> В избранное</a>
          <p class=" stars stars-2">
@@ -199,12 +197,7 @@
       <h2 class=" visually-hidden title">Пагинация</h2>
       <ul class="pagination-list">
         <li class="pagination-item">
-          <a class="pagination-link pagination-prev pagination-disabled">
-            <span class=" visually-hidden">Предыдущая страница</span>
-          </a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link pagination-current">1</a>
+          <a class="pagination-link" href="#">1</a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">2</a>
@@ -233,11 +226,6 @@
         <li class="pagination-item">
           <a class="pagination-link" href="#">10</a>
         </li>
-        <li class="pagination-item">
-          <a class=" pagination-link pagination-next" href="#">
-            <span class="visually-hidden"> Следующая страница</span>
-          </a>
-        </li>
       </ul>
     </section>
     <section class="appointment-e-mail">
@@ -247,7 +235,7 @@
         <label for="e-mail">
           <span class="visually-hidden">Введите Ваш e-mail</span>
         </label>
-        <input id="e-mail" name="e-mail" value="Ваш e-mail">
+        <input type="text" id="e-mail" placeholder="Ваш e-mail">
         <button type="submit"> Подписаться</button>
       </form>
     </section>
@@ -278,7 +266,7 @@
       <a href="tel:+78128121212">+7(812)812-12-12</a>
     </section>
     <a class="page-footer-logo" href="#">
-      <img src="#" alt="Логотип-ссылка на HTML acadamy">
+      <img src="#" alt="Логотип-ссылка на HTML Acadamy">
     </a>
   </footer>
 </body>

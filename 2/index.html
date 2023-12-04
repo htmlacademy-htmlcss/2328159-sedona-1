@@ -49,10 +49,10 @@
   <main class="main-index">
     <section class="hero">
       <h1 class="visually-hidden">Добро пожаловать в великолепную Седону</h1>
-      <img lang="en" src="#" alt="Welcome to gorgeous SEDONA because the Grand Canyon sucks!">
+      <img lang="en" src="#" alt="Welcome to gorgeous Sedona because the Grand Canyon sucks!">
     </section>
     <section class="advantages">
-      <h2 class="title">Седона — небольшой городок в Аризоне,заслуживающий большего!</h2>
+      <h2 class="title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
       <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       <ul class="advantages-list">
         <li class="advantages-item">
@@ -102,7 +102,7 @@
     </section>
     <section class="appointment-form">
       <h2 class="title">Заинтересовались?</h2>
-      <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <button class="button" type="button">Поиск гостиницы в Седоне</button>
     </section>
     <section class="appointment-e-mail">
@@ -110,9 +110,9 @@
       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
         <label for="e-mail">
-          <span class="visually-hidden">Введите Ваш e-mail</span>
+          <span class="visually-hidden"> Введите  Ваш e-mail</span>
         </label>
-        <input id="e-mail" name="e-mail" value="Ваш e-mail">
+        <input  type= "text" id="e-mail" placeholder="Ваш e-mail">
         <button type="submit"> Подписаться</button>
       </form>
     </section>
@@ -148,22 +148,22 @@
   </footer>
   <div class="modal">
    <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-    <label>Дата Заезда</label>
-      <input type="text" name="appointment-date" id="arrival-date" value="27 апреля 2020">
+    <label for="arrival-date">Дата Заезда</label>
+      <input type="text"  id="arrival-date" value="27 апреля 2020">
     <p>Мы не можем отправить Вас в прошлое</p>
-    <label>Дата Выезда</label>
-      <input type="text" name=" appointment-date" id="daparture-date" value="1 сентября 2023">
+    <label for="daparture-date">Дата Выезда</label>
+      <input type="text"  id="daparture-date" value="1 сентября 2023">
       <p>На эти дни есть свободные номера. Пока есть</p>
-    <label> Взрослые</label>
+    <label for="adult-number"> Взрослые</label>
     <div>
       <button type="button">-</button>
-      <input type="text" name="guests" id="adult" value="2">
+      <input type="text"  id="adult-number" value="2">
       <button type="button">+</button>
     </div>
-    <label>Дети</label>
+    <label for="children-numder">Дети</label>
     <div>
       <button type="button">-</button>
-      <input type="text" name="appointment-guests" id="children" value="2">
+      <input type="text"  id="children-numder" value="2">
       <button type="button">+</button>
       <button class="button">i</button>
       <p>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
