@@ -1,0 +1,249 @@
+@font-face{
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+
+  font-display: swap;
+}
+
+@font-face{
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/pt-sans-bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face{
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/pt-sans-italic.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face{
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/pt-sans-bold-italic.woff2") format("woff2");
+  font-display: swap;
+}
+
+body{
+  font-family: "PT Sans",sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #F2F2F2;;
+}
+
+.main-navigation-link{
+  font-family: "PT Sans",sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.navigation-user-link{
+  color: #000000;
+  text-decoration: none;
+}
+
+.navigation-user-item span:nth-child(2){
+  color: #FFFFFF;
+  background-color: #7DB54F;
+}
+
+.navigation-user .button{
+  font-family:"PT Sans",sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background-color: #756157;
+}
+
+.hero{
+  background-image: url(/images/hero/mountains.jpg);
+  width: 1200px;
+  height: 485px;
+  background-repeat: no-repeat;
+}
+
+.advantages-list h3{
+font-family: PT Sans;
+font-size: 24px;
+font-weight: 700;
+line-height: 28px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+}
+
+.advantages-list p{
+font-family: PT Sans;
+font-size: 18px;
+font-weight: 400;
+line-height: 21px;
+text-align: center;
+color: #333;
+}
+
+.service-item h3{
+font-family: PT Sans;
+font-size: 24px;
+font-weight: 700;
+line-height: 28px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+}
+
+.service-item p{
+  font-family: PT Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  color: #333;
+}
+
+.appointment-form{
+  font-family: PT Sans;
+  background-color: #FFF;
+  color: #000000;
+  text-align: center;
+
+}
+.appointment-form .button{
+  background-color: #756157;
+  color: #FFFFFF;
+}
+
+.appointment-form p{
+  font-family: PT Sans;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.appointment-e-mail{
+  background-image:url(/images/subscription/subscribe.jpg);
+  width: 1200;
+  height: 485px;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.appointment-e-mail-h2{
+  font-family: PT Sans;
+font-size: 30px;
+font-weight: 700;
+line-height: 36px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+.appointment-e-mail p{
+font-family: PT Sans;
+font-size: 22px;
+font-weight: 400;
+line-height: 26px;
+text-align: center;
+color: #FFFFFF;
+}
+
+.contacts{
+font-family: PT Sans;
+font-size: 40px;
+font-weight: 400;
+line-height: 40px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+}
+
+.catalog-products{
+  background-image: url(/images/filter-photo/filter.jpg);
+  width: 1200;
+  height: 412px;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.control-input-tick{
+  background-color: #FFFFFF;
+  color: #3f5E72;
+}
+.product-card-list h3{
+font-family: PT Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 28px;
+color: #000;
+}
+.product-card-list p{
+font-family: PT Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px;
+color: #333;
+}
+
+.product-card-button{
+font-family: PT Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 20px;
+text-align: center;
+text-transform: uppercase;
+background-color: #756157;
+color: #FFFFFF;
+}
+
+.product-card-button-to{
+font-family: PT Sans;
+font-size: 16px;
+font-weight: 700;
+line-height: 20px;
+text-align: center;
+text-transform: uppercase;
+background-color: #82b3d3;
+color: #FFFFFF;
+}
+
+.product-card-button-in{
+font-family: PT Sans;
+font-size: 16px;
+font-weight: 700;
+line-height: 20px;
+text-align: center;
+text-transform: uppercase;
+background-color: #7DB54F;
+color: #FFFFFF;
+}
+
+.product-card-list .stars{
+font-family: PT Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+text-align: center;
+text-transform: uppercase;
+background-color: #F2F2F2;
+color: #333;
+}
