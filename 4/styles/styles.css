@@ -39,6 +39,15 @@ body{
   background-color: #F2F2F2;;
 }
 
+h3{
+font-family: PT Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 28px;
+text-transform: uppercase;
+color: #000;
+}
 .main-navigation-link{
   font-family: "PT Sans",sans-serif;
   font-size: 20px;
@@ -60,7 +69,7 @@ body{
   background-color: #7DB54F;
 }
 
-.navigation-user .button{
+.button-all{
   font-family:"PT Sans",sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -75,17 +84,16 @@ body{
   background-repeat: no-repeat;
 }
 
-.advantages-list h3{
-font-family: PT Sans;
-font-size: 24px;
-font-weight: 700;
-line-height: 28px;
-text-align: center;
-text-transform: uppercase;
-color: #000000;
+.advantages-description{
+  font-family: PT Sans;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  color: #333;
 }
 
-.advantages-list p{
+.advantages-description-reasons{
 font-family: PT Sans;
 font-size: 18px;
 font-weight: 400;
@@ -94,17 +102,7 @@ text-align: center;
 color: #333;
 }
 
-.service-item h3{
-font-family: PT Sans;
-font-size: 24px;
-font-weight: 700;
-line-height: 28px;
-text-align: center;
-text-transform: uppercase;
-color: #000000;
-}
-
-.service-item p{
+.service-description{
   font-family: PT Sans;
   font-size: 18px;
   font-weight: 400;
@@ -115,17 +113,17 @@ color: #000000;
 
 .appointment-form{
   font-family: PT Sans;
-  background-color: #FFF;
+  background-color: #F2F2F2;
   color: #000000;
   text-align: center;
 
 }
+
 .appointment-form .button{
   background-color: #756157;
   color: #FFFFFF;
 }
-
-.appointment-form p{
+.arrival{
   font-family: PT Sans;
   font-size: 22px;
   font-weight: 400;
@@ -154,13 +152,25 @@ text-transform: uppercase;
 color: #FFFFFF;
 }
 
-.appointment-e-mail p{
+.e-mail-information{
 font-family: PT Sans;
 font-size: 22px;
 font-weight: 400;
 line-height: 26px;
 text-align: center;
-color: #FFFFFF;
+
+}
+
+.button-subscribe{
+font-family: PT Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px;
+text-align: center;
+text-transform: uppercase;
+background-color: #82b3d3;
+color: #FFF;
 }
 
 .contacts{
@@ -194,7 +204,7 @@ font-weight: 700;
 line-height: 28px;
 color: #000;
 }
-.product-card-list p{
+.type-price{
 font-family: PT Sans;
 font-size: 18px;
 font-style: normal;
