@@ -47,8 +47,8 @@
     </nav>
   </header>
 <main class="inner">
-  <header class="inner-header">
-    <h1 class="inner-header-title">Гостиницы Седоны</h1>
+  <div class="catalog-filter-container">
+    <h1 class="inner-title">Гостиницы Седоны</h1>
     <ul class="breadcrumbs">
       <li class="breadcrumbs-item">
         <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -57,11 +57,10 @@
         <a class="breadcrumbs-link">Гостиницы Седоны</a>
       </li>
     </ul>
-  </header>
-  <section class="catalog-filter-products">
+  <section class="catalog-filter-products catalog-filter-container ">
     <h2 class="visually-hidden  select-title">Поиск гостиниц с фильтрами</h2>
     <form class="catalog-filter" action="https://echo.htmlacadamy.ru/" method="get">
-      <fieldset class="catalog-filter-group">
+      <fieldset class="catalog-filter-group ">
         <legend class="catalog-filter-title">Инфраструктура</legend>
         <ul class="catalog-filter-list">
            <li class="catalog-filter-item">
@@ -85,7 +84,7 @@
         </ul>
       </fieldset>
       <fieldset class=" catalog-filter-group">
-         <legend class="catalog-filter-title">Тип жилья</legend>
+         <legend class="catalog-filter-title ">Тип жилья</legend>
          <ul class=" catalog-filter-list">
           <li class="catalog-filter-item">
             <label class="control">
@@ -107,13 +106,14 @@
         </li>
          </ul>
       </fieldset>
-      <label>стоимость,р</label>
-        <input type="text" name="cost" value="0 от">
-        <input type="text" name="cost" value="9000 до">
+      <label class="cost-price">стоимость,р</label>
+        <input class="cost-ot" type="text" name="cost" value="0 от">
+        <input class=" cost-to" type="text" name="cost" value="9000 до">
          <button class="button-use" type="submit">Применить</button>
          <button class="button-end" type="reset">Сбросить</button>
-    </form>
+        </form>
   </section>
+</div>
   <section class="appointment-search" >
       <h2 class="title">Найдено гостиниц: 38</h2>
       <select class="choose">
@@ -197,34 +197,34 @@
       <h2 class=" visually-hidden title">Пагинация</h2>
       <ul class="pagination-list">
         <li class="pagination-item">
-          <a class="pagination-link" href="#">1</a>
+          <a class="pagination-link-1" href="#">1</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">2</a>
+          <a class="pagination-link-2" href="#">2</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">3</a>
+          <a class="pagination-link-3" href="#">3</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">4</a>
+          <a class="pagination-link-4" href="#">4</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">5</a>
+          <a class="pagination-link-5" href="#">5</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">6</a>
+          <a class="pagination-link-6" href="#">6</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">7</a>
+          <a class="pagination-link-7" href="#">7</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">8</a>
+          <a class="pagination-link-8" href="#">8</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">9</a>
+          <a class="pagination-link-9" href="#">9</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">10</a>
+          <a class="pagination-link-10" href="#">10</a>
         </li>
       </ul>
     </section>
@@ -240,7 +240,7 @@
       </form>
     </section>
   </main>
-  <main class="main-footer">
+  <footer class="main-footer">
     <section class="footer-social">
       <h2 class="visually-hidden main-footer-title"> Мы в социальных сетях</h2>
       <ul class="footer-social-list">
