@@ -22,33 +22,35 @@
           <a class="main-navigation-link" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
-      <ul class="navigation-user">
-        <li class="navigation-user-item">
-          <a class="navigation-user-link" href="#">
-            <span class="visually-hidden hidden">Поиск</span>
-          </a>
-        </li>
-        <li class="navigation-user-item">
-          <a class="navigation-user-link" href="#">
-            <span class="visually-hidden">
-              Количество отелей, добавленных в избранное
-            </span>
-            <span class="favorites">
-              12
-            </span>
-          </a>
-        </li>
-        <li class="navigation-user-item">
-          <a class="navigation-user-link button button-all" href="#">
-       Хочу сюда
-          </a>
-        </li>
-      </ul>
     </nav>
+      <nav class="navigation-user">
+        <ul class="navigation-list">
+          <li class="navigation-user-item">
+            <a class="navigation-user-link" href="#">
+              <span class="visually-hidden hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="navigation-user-item">
+            <a class="navigation-user-link" href="#">
+              <span class="visually-hidden">
+                Количество отелей, добавленных в избранное
+              </span>
+              <span class="favorites">
+                12
+              </span>
+            </a>
+          </li>
+          <li class="navigation-user-item">
+            <a class="navigation-user-link button-brown-first" href="#">
+         Хочу сюда
+            </a>
+          </li>
+        </ul>
+      </nav>
   </header>
-  <main class="main-index">
+    <main class="main-container main-index">
     <section class="hero">
-      <h1 class="visually-hidden">Добро пожаловать в великолепную Седону</h1>
+      <h1 class="index visually-hidden">Добро пожаловать в великолепную Седону</h1>
       <img lang="en" src="images/hero/welcome.svg" width="485" height="352" alt="Welcome to gorgeous Sedona because the Grand Canyon sucks!">
       </section>
     <section class="advantages">
@@ -103,17 +105,17 @@
     <section class="hotel-search">
       <h2 class="title">Заинтересовались?</h2>
       <p class="subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <button class="button-search" type="button">Поиск гостиницы в Седоне</button>
+      <button class="button-brown-second" type="button">Поиск гостиницы в Седоне</button>
     </section>
-    <section class="subcribe">
-      <h2 class="subcribe-title">Подпишитесь на рассылку</h2>
-      <p class="subcribe-slogan">Только полезная информация и никакого спама, честное бойскаутское!</p>
+    <section class="subscribe-index">
+      <h2 class="subscribe-title-index">Подпишитесь на рассылку</h2>
+      <p class="subscribe-slogan-index">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="visually-hidden" for="e-mail">
            Введите  Ваш e-mail
         </label>
         <input class="massage"  type= "text" id="e-mail" name="e-mail" placeholder="Ваш e-mail">
-        <button class="button-subscribe" type="submit"> Подписаться</button>
+        <button class="button-blue-second" type="submit"> Подписаться</button>
       </form>
     </section>
   </main>
@@ -152,7 +154,7 @@
       <input class="arrival-date" type="text"  id="arrival-date" name="arrival-date" value="27 апреля 2020">
     <p class="past">Мы не можем отправить Вас в прошлое</p>
     <label class="drive-off" for="daparture-date">Дата Выезда</label>
-      <input class="daparture-date" type="text"  id="daparture-date" name="daparture-date" value="1 сентября 2023">
+      <input class="departure-date" type="text"  id="daparture-date" name="departure-date" value="1 сентября 2023">
       <p class="now">На эти дни есть свободные номера. Пока есть</p>
     <label class="adult" for="adult-number"> Взрослые</label>
     <div>
@@ -163,12 +165,12 @@
     <label class="children" for="children-numder">Дети</label>
     <div>
       <button type="button">-</button>
-      <input class="children-numder" type="text"  id="children-numder" name="children-numder" value="2">
+      <input class="children-numder" type="text"  id="children-numder" name="children-number" value="2">
       <button type="button">+</button>
       </div>
       <button class="button-info">i</button>
       <p class="modal-children-number">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
-      <button class="button-modal-search" type="submit">Найти</button>
+      <button class="button-blue-third" type="submit">Найти</button>
     </form>
   </div>
 </body>
