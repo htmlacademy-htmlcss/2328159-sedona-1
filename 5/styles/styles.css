@@ -30,41 +30,44 @@ body{
   background-color: #F2F2F2;
 }
 
-
-.main-header{
-  width: 1200px;
+.container{
+width: 1200px;
+margin: 0 auto;
+background-color: #FFFFFF;
+box-shadow: 0 4px 4px  rgba(0, 0, 0, 0.25);
 }
+
 
 .main-container{
   flex-grow: 1;
 }
 
+main-header{
+  padding-left: 70px;
+  padding-right: 70px;
 
-.main-header-logo{
+}
+
+.header-logo{
   margin-left: 70px;
   margin-right:30px;
   width:140px;
 }
 
-.main-navigation{
+.navigation{
   display: flex;
   margin: 0 auto;
 }
 
-.navigation-user{
-  display: flex;
-  margin-left: auto;
-}
-
-.main-navigation-list{
+.navigation-list{
 margin: 0;
 padding: 0;
 }
 
-.navigation-list{
-  margin: 0;
-padding: 0;
+.user-menu-list{
+margin-left: auto;
 }
+
 
 .title{
  font-size: 30px;
@@ -83,7 +86,7 @@ text-align: center;
 color: #333;
 }
 
-.main-navigation-link{
+.navigation-link{
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -93,7 +96,7 @@ color: #333;
   text-transform: capitalize;
 }
 
-.navigation-user-link{
+.user-menu-link{
   color: #000000;
   text-decoration: none;
 }
@@ -103,13 +106,44 @@ color: #333;
   background-color: #7DB54F;
 }
 
-.button-brown-first{
+.btn{
+font-family: inherit;
+font-weight: 700;
+ text-align: Center;
+ background-color:#82B3D3;
+ color: #FFFFFF;
+font-size: 16px;
+line-height: 20px;
+}
+
+
+.button{
   font-family:inherit;
+  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  text-align: Center;
   color: #FFFFFF;
   background-color: #756157;
   margin-right: 70px;
+}
+
+.btn-secondary{
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.modal-window-button{
+font-family: inherit;
+font-size: 20px;
+line-height: 24px;
+}
+
+.modal-window-info-button{
+  font-family: inherit;
+  background-color:#83B3D3;
+  color: #FFFFFF;
 }
 
 .hero{
@@ -215,17 +249,6 @@ background-color: #82B3D3;
  text-align: center;
 }
 
-.button-brown-second{
-font-family: inherit;
-font-size: 20px;
-font-weight: 700;
-line-height: 36px;
-text-align: center;
-text-transform: uppercase;
-background-position: center;
-background-color: #756157;
-color: #FFFFFF;
-}
 
 .subscribe-index{
   background-image: url('../images/subscription/subscribe.jpg');
@@ -276,17 +299,6 @@ line-height: 24px;
 color: #000;
 }
 
-.button-blue-second{
-font-family: inherit;
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: 36px;
-text-align: center;
-text-transform: uppercase;
-background-color: #82b3d3;
-color: #FFF;
-}
 .main-footer{
   background-color:#FFFFFF ;
   padding: 40px 70px 30px;
@@ -307,7 +319,7 @@ color: #000000;
   background-color: #FFFFFF;
 }
 
-.get{
+.arrival{
 font-family: inherit;
 font-size: 20px;
 font-weight: 700;
@@ -328,7 +340,19 @@ color: #000000;
   background-color: #F2F2F2;
 }
 
-.past{
+
+.departure{
+  font-family: inherit;
+  font-size:18px ;
+  font-weight: 700;
+  line-height:24px ;
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+
+
+.error{
   font-family: inherit;
   font-size: 16px;
   font-weight: 400;
@@ -344,16 +368,7 @@ color: #000000;
   color: #000000;
 }
 
-.departure-date{
-  font-family: inherit;
-  font-size:18px ;
-  font-weight: 700;
-  line-height:24px ;
-  background-color: #F2F2F2;
-  color: #000000;
-}
-
-.now{
+.progress{
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
@@ -367,6 +382,7 @@ color: #000000;
   line-height: 24px;
   color: #000000;
 }
+
 
 .adult-number{
   font-family: inherit;
@@ -396,23 +412,6 @@ color: #000000;
   color: #000000;
 }
 
-.button-info{
-  font-family: inherit;
-  background-color:#83B3D3;
-  color: #FFFFFF;
-
-}
-
-.button-blue-third{
-  font-family: inherit;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-  text-align: center;
-  background-color:#83B3D3;
-  color: #FFFFFF;
-}
-
 .modal-children-number{
   font-size: 16px;
   font-weight: 400;
@@ -420,7 +419,7 @@ color: #000000;
 }
 .filter-container{
   background-image: url('../images/filter-photo/filter.jpg');
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   text-align: center;
   color: #FFFFFF;
   display: flex;
@@ -428,42 +427,42 @@ color: #000000;
   padding: 35px 70px 70px;
 }
 
-catalog-filter-products{
-  background-image: url('../images/filter-photo/filter.jpg');
-  display: flex;
-  flex-direction: column;
+.inner-title{
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+  color: #FFF;
+  }
+  .breadcrumbs-link{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    }
+
+    .catalog-filter{
+      display: flex;
+      gap: 70px;
 }
 
-.catalog-filter-group left{
-  display: flex;
-  flex-direction: column;
-  width: 150px;
-  margin-right:  70px;
+.catalog-filter-title{
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
 }
 
-.catalog-filter-group right{
-  display: flex;
-  flex-direction: column;
-width: 150px;
-margin-right: auto;
+.catalog-filter-group{
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  width: 370px;
+
 }
 
 catalog-filter-price{
-  display: flex;
-  width: 288px;
-  margin-right: 70px;
-}
-.inner-title{
-font-size: 60px;
-font-weight: 700;
-line-height: 78px;
-color: #FFF;
-}
-
-.breadcrumbs-link{
-font-size: 16px;
-font-weight: 400;
-line-height: 21px;
+   width: 288px;
+  margin-left: auto;
 }
 
 .catalog-filter-title{
@@ -473,14 +472,11 @@ line-height: 24px;
 color: #FFF;
 }
 
-.control-input-checked{
-font-family: inherit;
-font-size: 18px;
-font-weight: 400;
-line-height: 23px;
+.control-input:checked{
 background-color: #FFF;
 color: #3F5E72;
 }
+
 
 .cost-price{
   font-family: inherit;
@@ -512,18 +508,6 @@ color: #3F5E72;
   font-weight: 400;
   line-height: 23px;
   color: #FFF;
-}
-
-.button-use{
-font-family: inherit;
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: 20px;
-text-align: center;
-text-transform: uppercase;
-background-color: #82b3d3;
-color: #FFF;
 }
 
 .button-reset{
@@ -574,28 +558,9 @@ line-height: 21px;
 color: #333;
 }
 
-.button-brown-first{
-font-family: inherit;
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: 20px;
-text-align: center;
-text-transform: uppercase;
-background-color: #756157;
-color: #FFFFFF;
-}
 
-.button-blue-first{
-font-family: inherit;
-font-size: 16px;
-font-weight: 700;
-line-height: 20px;
-text-align: center;
-text-transform: uppercase;
-background-color: #82b3d3;
-color: #FFFFFF;
-}
+
+
 
 .button-green{
 font-family: inherit;
