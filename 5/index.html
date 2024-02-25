@@ -41,7 +41,7 @@
             </a>
           </li>
           <li class="user-menu-item">
-            <a class="button" href="#">
+            <a class="button button-secondary" href="#">
          Хочу сюда
             </a>
           </li>
@@ -58,8 +58,8 @@
         <p class="subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         <ul class="advantages-list">
           <li class="advantages-item town">
-            <h3 class=" advantages-title-white">Настоящий городок</h3>
-            <p class="advantages-description-white">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <h3 class="advantages-title advantages-title-secondary">Настоящий городок</h3>
+            <p class="advantages-description advantages-description-secondary">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <img src="images/advantages/advantages-photo1.jpg" width="800" height="385" alt="Дома города Седона">
           </li>
           <li class="advantages-item square">
@@ -75,8 +75,8 @@
             <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
           <li class="advantages-item bridge">
-            <h3 class="advantages-title-white">Там есть мост дьявола</h3>
-            <p class="advantages-description-white">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <h3 class="advantages-title  advantages-title-secondary">Там есть мост дьявола</h3>
+            <p class=" advantages-description  advantages-description-secondary">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             <img src="images/advantages/advantages-photo2.jpg" width="800" height="385" alt="Мост дьявола">
           </li>
         </ul>
@@ -86,36 +86,36 @@
         <p class="subtitle">Опытный персонал и качественное обслуживание!</p>
         <ul class=" service-list">
           <li class="service-item housing">
-            <h3 class="service-title">Жильё</h3>
-            <p class="service-description">Рекомендуем пожить в настоящем мотеле,
+            <h3 class="advantages-title">Жильё</h3>
+            <p class="advantages-description">Рекомендуем пожить в настоящем мотеле,
               всё как в кино!</p>
           </li>
           <li class="service-item food">
-            <h3 class="service-title">Еда</h3>
-            <p class="service-description">Всегда заказывайте
+            <h3 class="advantages-title">Еда</h3>
+            <p class="advantages-description">Всегда заказывайте
               топовый фирменный бургер, вы не разочаруетесь!!</p>
           </li>
           <li class="service-item souvenirs">
-            <h3 class="service-title">Сувениры</h3>
-            <p class="service-description">Не только китайского,
+            <h3 class="advantages-title">Сувениры</h3>
+            <p class="advantages-description">Не только китайского,
               но и настоящего местного производства!</p>
           </li>
         </ul>
       </section>
       <section class="hotel-search">
-        <h2 class="title">Заинтересовались?</h2>
-        <p class="subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="button btn-secondary" type="button">Поиск гостиницы в Седоне</button>
+        <h2 class="hotel-search-title">Заинтересовались?</h2>
+        <p class="hotel-search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button class="button" type="button">Поиск гостиницы в Седоне</button>
       </section>
-      <section class="subscribe-index">
-        <h2 class="subscribe-title-index">Подпишитесь на рассылку</h2>
-        <p class="subscribe-slogan-index">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <section class="subscribe subscribe-index">
+        <h2 class="subscribe-title subscribe-title-index">Подпишитесь на рассылку</h2>
+        <p class="subscribe-slogan  subscribe-slogan-index">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="e-mail">
              Введите  Ваш e-mail
           </label>
           <input class="massage"  type= "text" id="e-mail" name="e-mail" placeholder="Ваш e-mail">
-          <button class="btn btn-secondary" type="submit"> Подписаться</button>
+          <button class="button button-third" type="submit"> Подписаться</button>
         </form>
       </section>
     </main>
@@ -150,27 +150,27 @@
     </footer>
     <div class="modal">
      <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-      <label class="arrival" for="arrival-date">Дата Заезда</label>
+      <label class="field-name" for="arrival-date">Дата Заезда</label>
         <input class="arrival-date" type="text"  id="arrival-date" name="arrival-date" value="27 апреля 2020" placeholder="27 апреля 2020">
-      <p class="error">Мы не можем отправить Вас в прошлое</p>
-      <label  class="departure" for="departure">Дата Выезда</label>
-        <input class="departure" type="text" id="departure" name="departure-date" value="1 сентября 2023" placeholder="1 сентября 2023">
-        <p class="progress">На эти дни есть свободные номера. Пока есть</p>
-      <label class="adult" for="adult-number"> Взрослые</label>
+      <p class="field-status error">Мы не можем отправить Вас в прошлое</p>
+      <label  class="field-name" for="departure-date">Дата Выезда</label>
+        <input class="departure-date" type="text" id="departure-date" name="departure-date" value="1 сентября 2023" placeholder="1 сентября 2023">
+        <p class="field-status progress">На эти дни есть свободные номера. Пока есть</p>
+      <label class="guests" for="adult-number"> Взрослые</label>
       <div>
-        <button  class="modal-window-button-minus" type="button">-</button>
-        <input class="adult-number" type="text"  id="adult-number" name="adult-number" value="2">
-        <button class="modal-window-button-plus" type="button">+</button>
+        <button  class="modal-window-button" type="button">-</button>
+        <input class="guest-number" type="text"  id="adult-number" name="adult-number" value="2">
+        <button class="modal-window-button" type="button">+</button>
       </div>
-      <label class="children" for="children-numder">Дети</label>
+      <label class="guests" for="children-numder">Дети</label>
       <div>
-        <button class="modal-window-button-minus" type="button">-</button>
-        <input class="children-number" type="text"  id="children-numder" name="children-number" value="2">
-        <button class="modal-window-button-plus" type="button">+</button>
+        <button class="modal-window-button" type="button">-</button>
+        <input class="guest-number" type="text"  id="children-numder" name="children-number" value="2">
+        <button class="modal-window-button" type="button">+</button>
         </div>
-        <button class="modal-window-info-button" type="button">i</button>
-        <p class="modal-children-number">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
-        <button class="btn modal-window-button" type="submit">Найти</button>
+        <button class="button modal-window-button modal-window-button-info button-third" type="button">i</button>
+        <p class="drop-down-window">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+        <button class="button button-modal-search button-third" type="submit">Найти</button>
       </form>
     </div>
   </div>
