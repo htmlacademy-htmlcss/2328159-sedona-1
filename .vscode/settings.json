@@ -19,5 +19,24 @@
   "css.lint.unknownVendorSpecificProperties": "warning",
   "css.lint.zeroUnits": "error",
   "html.format.endWithNewline": true,
-  "html.format.indentInnerHtml": true
+  "html.format.indentInnerHtml": true,
+  "cSpell.words": [
+    "Acadamy",
+    "Amara",
+    "Diablo",
+    "ptsans",
+    "Vkonakte",
+    "Главная",
+    "Гостиницы",
+    "добавленных",
+    "Количество",
+    "Логотип",
+    "отелей",
+    "Поиск",
+    "Седона",
+    "Седоне",
+    "Седону",
+    "Седоны"
+  ],
+  "cSpell.language": "en,ru"
 }
