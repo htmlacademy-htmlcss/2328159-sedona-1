@@ -54,8 +54,8 @@
         <li class="breadcrumbs-item">
           <div class="breadcrumbs-link-container">
             <a class="breadcrumbs-link  visually-hidden" href="index.html">Главная</a>
-          <svg  class="breadcrumbs-link-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="13" height="15" fill="none" viewBox="0 0 13 15"><path fill="#fff" d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z"/><path fill="#fff" d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z"/></svg>
-          <svg class="breadcrumbs-link-arrow" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="8" height="21" fill="none" viewBox="0 0 8 21"><path fill="#fff" d="m6.915 9.969-4.75-4.25c-.25-.25-.75-.25-1.125 0s-.25.75 0 1l4.125 3.75-4 3.75c-.25.25-.25.75 0 1 0 .125.375.25.5.25s.375-.125.5-.25l4.75-4.25a.585.585 0 0 0 0-1Z"/></svg>
+            <a class="breadcrumbs-link breadcrumbs-link-icon" href="#"></a>
+            <a class="breadcrumbs-link breadcrumbs-link-arrow" href="#"></a>
           </div>
           </li>
         <li class="breadcrumbs-item">
@@ -71,20 +71,24 @@
              <li class="catalog-filter-item">
               <label class="control">
               <input class="control-input" type="checkbox" name="Бассейн" checked>
+              <span class="pseudo-checkbox"></span>
               Бассейн
-              </label>
+            </label>
+
             </li>
              <li class="catalog-filter-item">
               <label class="control">
               <input class="control-input" type="checkbox" name="Парковка" checked>
+              <span class="pseudo-checkbox"></span>
               Парковка
-              </label>
+             </label>
               </li>
              <li class="catalog-filter-item">
               <label class="control">
               <input class="control-input" type="checkbox" name="Wi-fi">
-              Wi-fi
-              </label>
+              <span class="pseudo-checkbox"></span>
+               Wi-fi
+               </label>
             </li>
           </ul>
         </fieldset>
@@ -93,19 +97,22 @@
            <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
-               <input class="control-input" type="radio" name="product-group" value="hotel" checked>
+               <input class="control-input-radio" type="radio" name="product-group" value="hotel" checked>
+               <span class="pseudo-radio"></span>
                Гостиница
               </label>
              </li>
              <li class="catalog-filter-item">
              <label class="control">
-               <input class="control-input" type="radio" name="product-group" value="motel">
-            Мотель
+               <input class="control-input-radio" type="radio" name="product-group" value="motel">
+               <span class="pseudo-radio"></span>
+               Мотель
              </label>
            </li>
            <li class="catalog-filter-item">
             <label class="control">
-              <input class="control-input" type="radio" name="product-group" value="apartments">
+              <input class="control-input-radio" type="radio" name="product-group" value="apartments">
+              <span class="pseudo-radio"></span>
               Апартаменты
             </label>
           </li>
@@ -113,11 +120,12 @@
         </fieldset>
         <fieldset  class="catalog-filter-price">
           <legend class="cost-price">стоимость,р</legend>
-          <label class="cost-price visually-hidden" for="cost-from"> От</label>
-          <input class="cost-from" type="text" id="cost-from" name="cost-from" value="0 от"  placeholder="0">
-          <label class="cost-price visually-hidden" for="cost-to"> До</label>
-          <input class=" cost-to" type="text" id="cost-to" name="cost-to" value="9000 до" placeholder="9000">
-        </fieldset>
+<div class="cost-price-container">
+  <label class="cost-price-from visually-hidden" for="cost-from">от</label>
+    <input class="cost-from" type="text" id="cost-from" name="cost-from" value="0 от" placeholder=" 0 от"><label class="cost-price- visually-hidden" for="cost-to"> До</label>
+          <input class="cost-to" type="text" id="cost-to" name="cost-to" value="9000 до" placeholder=" 9000 до">
+</div>
+     </fieldset>
         <div class="submit-reset">
           <button class="button button-secondary button-third" type="submit">Применить</button>
           <button class=" button button-secondary button-reset" type="reset">Сбросить</button>
@@ -136,27 +144,23 @@
                       <ul class="choice-view-list">
                         <li class="choice-view-item">
                           <a class="choice-view-one" href="#">
-                            <svg class="choice-view-one" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48"><rect width="46" height="46" x="1" y="1" stroke="#000" stroke-width="2" rx="3"/><g fill="#000" clip-path="url(#a)"><path d="M20 17h-4v6h4v-6ZM32 17h-4v6h4v-6ZM26 17h-4v6h4v-6ZM20 25h-4v6h4v-6ZM32 25h-4v6h4v-6ZM26 25h-4v6h4v-6Z"/></g><defs><clipPath><path fill="#fff" d="M16 17h16v14H16z"/></clipPath></defs></svg>
                             <span class="visually-hidden"> Показать карточки</span>
                           </a>
                         </li>
                         <li class="choice-view-item">
-                          <a  href="#">
-                            <svg class="choice-view-two" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48"><rect width="46" height="46" x="1" y="1" stroke="#E5E5E5" stroke-width="2" rx="3"/><g fill="#000" clip-path="url(#a)"><path d="M32 29H16v2h16v-2ZM30 19v6H18v-6h12Zm2-2H16v10h16V17Z"/></g><defs><clipPath ><path fill="#fff" d="M16 17h16v14H16z"/></clipPath></defs></svg>
-                            <span class="visually-hidden"> Показывать по одной карточке в слайдере</span>
+                          <a class="choice-view-two"  href="#">
+<span class="visually-hidden"> Показывать по одной карточке в слайдере</span>
                           </a>
                          </li>
                         <li class="choice-view-item">
                           <a  href="#" class="choice-view-three">
-                            <svg class="choice-view-three" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48"><rect width="46" height="46" x="1" y="1" stroke="#E5E5E5" stroke-width="2" rx="3"/><g fill="#000" clip-path="url(#a)"><path d="M18 17h-2v2h2v-2ZM32 17H20v2h12v-2ZM18 21h-2v2h2v-2ZM32 21H20v2h12v-2ZM18 25h-2v2h2v-2ZM32 25H20v2h12v-2ZM18 29h-2v2h2v-2ZM32 29H20v2h12v-2Z"/></g><defs><clipPath><path fill="#fff" d="M16 17h16v14H16z"/></clipPath></defs></svg>
-                            <span class="visually-hidden"> Показать список</span>
+     <span class="visually-hidden"> Показать список</span>
                           </a>
                         </li>
                     </ul>
         </div>
         </section>
-
-     <section class="product-card">
+<section class="product-card">
           <ul class="product-card-list">
             <li class="product-card-item card">
               <a href="#">
@@ -165,7 +169,7 @@
               <a class="title-link"> <h3 class="product-card-title">Amara Resort & Spa</h3></a>
               <p class="hotel-type">Гостиница </p>
               <span class="hotel-price">от 4000p</span>
-             <a class=" button button-secondary  more" href="#"> Подробнее</a>
+             <a class=" button button-secondary more" href="#"> Подробнее</a>
              <a class="button button-secondary button-third  choose" href="#"> В избранное</a>
              <p class="stars stars-4">
               <span class="visually-hidden">Четыре звезды</span>
@@ -181,8 +185,8 @@
 <a class="title-link"><h3 class="product-card-title">Villas at Poco Diablo </h3></a>
               <p class="hotel-type">Гостиница</p>
               <span class="hotel-price">от 5000p</span>
-             <a class="button button-secondary more"  href="#"> Подробнее</a>
-             <a class="button button-secondary button-in-favorites" href="#"> В избранном</a>
+             <a class="button button-secondary more" href="#" > Подробнее</a>
+             <a class= "button button-secondary chosen"  href="#"> В избранном</a>
              <p class=" stars stars-4">
               <span class="visually-hidden">Четыре звезды</span>
              </p>
@@ -197,7 +201,7 @@
              <a class="title-link"><h3 class="product-card-title"> Desert Quail Inn</h3></a>
             <p class="hotel-type">Гостиница</p>
             <span class="hotel-price">от 2500p</span>
-             <a class="button button-secondary  more" href="#"> Подробнее</a>
+             <a class="button button-secondary more" href="#"> Подробнее</a>
              <a class="button button-secondary button-third  choose" href="#"> В избранное</a>
              <p class=" stars stars-3">
               <span class="visually-hidden">Три звезды</span>
@@ -213,7 +217,7 @@
               <a  class="title-link"><h3 class="product-card-title"> GreenTree Inn </h3></a>
             <p class="hotel-type">Гостиница</p>
             <span class="hotel-price"> от 1500p</span>
-             <a class="button button-secondary  more" href="#"> Подробнее</a>
+             <a class="button button-secondary more" href="#"> Подробнее</a>
              <a class="button button-secondary button-third  choose" href="#"> В избранное</a>
              <p class=" stars stars-2">
               <span class="visually-hidden">Две звезды</span>
@@ -297,9 +301,11 @@
         <h2 class="visually-hidden title">Контакты</h2>
         <a class="tel-contact"  href="tel:+78128121212">+7(812)812-12-12</a>
       </section>
-      <a class="developer-logo" href="https://htmlacademy.ru/">
-        <img src="/images/developer/logo-acadamy-icon.svg" alt="Логотип  HTML Academy">
-      </a>
+      <section class="developer">
+        <a class="developer-logo" href="https://htmlacademy.ru/">
+          <img src="/images/developer/logo-academy-icon.svg" alt="Логотип  HTML Academy">
+        </a>
+      </section>
     </footer>
   </div>
 </body>
