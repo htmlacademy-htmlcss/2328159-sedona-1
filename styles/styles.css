@@ -2420,13 +2420,6 @@ box-sizing: border-box;
 border-radius: 4px 4px 4px 4px;
 }
 
-/* .catalog-line{
-  width:100%;
-  border-top: 1px solid rgba(230, 230, 230, 1);
-  box-sizing: border-box;
-  margin: 40px 0;
-} */
-
 
 .pagination-container::before{
   display: block;
