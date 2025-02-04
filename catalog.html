@@ -25,7 +25,7 @@
                 <a class="navigation-link" href="#">О Седоне</a>
               </li>
               <li class="navigation-item">
-                <a class="navigation-link navigation-link-current" href="catalog.html"  aria-current="page">Гостиницы</a>
+                <a class="navigation-link navigation-link-current" href="catalog.html" aria-current="page">Гостиницы</a>
               </li>
             </ul>
           </nav>
@@ -114,7 +114,7 @@
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input-radio" type="radio" name="product-group" value="motel">
+                        <input class="control-input-radio" type="radio"  name="product-group" value="motel">
                         <span class="pseudo-radio"></span>
                         Мотель
                       </label>
@@ -149,8 +149,11 @@
                       <div class="range-scale">
                         <div class="range-bar">
                           <button type="button" class="range-toggle toggle-min">
+                            <span class="visually-hidden">кнопка выбора минимальной стоимости</span>
                           </button>
-                          <button type="button" class="range-toggle toggle-max"></button>
+                          <button type="button" class="range-toggle toggle-max">
+                            <span class="visually-hidden">кнопка выбора максимальной стоимости</span>
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -277,7 +280,7 @@
           <div class="pagination-container">
             <ul class="pagination-list">
               <li>
-                <a class="link-pagination  pagination-link-checked" href="#">1</a>
+                <a class="link-pagination  pagination-link-checked" href="#" tabindex="-1">1</a>
               </li>
               <li>
                 <a class="link-pagination pagination-link" href="#">2</a>
@@ -391,13 +394,15 @@
 
       <div class="modal-container" id="modal-id">
         <div class="modal-window">
-          <a class="modal-close-button" href="#">
-            <svg class="modal-close-button-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="20"
-              fill="inherit">
-              <path
-                d="M17.393 4.292 16.1 3l-5.707 5.708L4.685 3 3.393 4.292 9.1 10l-5.708 5.708L4.685 17l5.708-5.708L16.1 17l1.293-1.292L11.685 10l5.708-5.708Z" />
-            </svg>
-          </a>
+          <form action="#" method="get">
+            <button class="modal-close-button" type="submit">
+              <svg class="modal-close-button-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                fill="inherit">
+                <path
+                  d="M17.393 4.292 16.1 3l-5.707 5.708L4.685 3 3.393 4.292 9.1 10l-5.708 5.708L4.685 17l5.708-5.708L16.1 17l1.293-1.292L11.685 10l5.708-5.708Z" />
+              </svg>
+            </button>
+          </form>
           <section class="modal-content">
             <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
               <div class="modal-content-container">
