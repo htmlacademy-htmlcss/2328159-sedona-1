@@ -1601,7 +1601,7 @@ arrival-date:focus {
   padding: 0;
   display: block;
   flex: none;
-  visibility: hidden;
+  opacity: 0;
   width: 20px;
   height: 20px;
   font-family: inherit;
@@ -1646,8 +1646,7 @@ arrival-date:focus {
 }
 
  .control-input:focus + .pseudo-checkbox::before {
-
-  outline: 3px solid #83b3d3;
+ outline: 3px solid #83b3d3;
 }
 
 .control-input:focus-visible + .pseudo-checkbox::before {
